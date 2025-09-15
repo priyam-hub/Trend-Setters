@@ -199,7 +199,7 @@ Trend-Setters/
     │   └── index.html                       # Main index page template
     ├── __init__.py                          # Marks web folder as a Python package
     └── app.py                               # Flask application file to run backend and route endpoints
-
+```
 ---
 
 # 📜 License
