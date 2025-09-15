@@ -29,7 +29,7 @@ The system is designed with a **Flask backend**, an **interactive frontend UI**,
 
 # 🚀 Features
 
-* **Conversational AI Assistant**: Powered by **LLaMA 3 (70B)** via Groq API for natural and human-like conversations.  
+* **Conversational AI Assistant**: Powered by **LLaMA 3 (70B)** via Groq API and Quantized **meta-llama/Llama-3.1-8B** via HF for natural and human-like conversations.  
 * **Intelligent Vector Search**: Leverages **Qdrant Vector Database** to find the most relevant fashion products using semantic similarity.  
 * **Multi-Attribute Query Handling**: Supports dynamic filtering based on **brand, color, category, gender, size**, and more.  
 * **Context-Aware Query Processing**: Understands partial queries and prompts users for missing details to refine results.  
