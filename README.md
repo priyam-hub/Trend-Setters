@@ -12,7 +12,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100.0+-009688.svg)](https://fastapi.tiangolo.com)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-[Features] (#features) • [Installation] (#installation) • [Documentation] (#documentation) • [Usage] (#usage) • [Contributing] (#contributing)
+[Features](#-features) • [Installation](#-installation) • [Tech Stack](#-tech-stack) • [Usage](#-usage) • [Future Enhancements](#-future-enhancements)
 
 </div>
 
