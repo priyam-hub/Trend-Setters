@@ -85,17 +85,17 @@ def extractor(llm : object, conversation_history : str) -> str:
         response = llm.invoke(prompt)
         extractor_logger.debug(f"Extractor LLM response: {response}")
 
-        # return response.content ## FOR CHATGROQ
+        return response.content ## FOR CHATGROQ
 
-        if isinstance(response, str):
-            extractor_logger.debug(f"Extractor LLM response (string): {response.strip()}")
+        # if isinstance(response, str):
+        #     extractor_logger.debug(f"Extractor LLM response (string): {response.strip()}")
             
-            return response.strip()
+        #     return response.strip()
         
-        else:
-            extractor_logger.debug(f"Extractor LLM response (non-string): {response}")
+        # else:
+        #     extractor_logger.debug(f"Extractor LLM response (non-string): {response}")
             
-            return str(response)
+        #     return str(response)
         
     except Exception as e:
         extractor_logger.error(f"Error during LLM invocation in extractor: {repr(e)}")
