@@ -133,6 +133,8 @@ It is used to power semantic search and AI-driven product recommendations in thi
 | *"I am Looking for women Black Top"* | ![Search Result 1](images/search_result_1.png) |
 | *"I am Looking for Women Red Kurtis"* | ![Search Result 2](images/search_result_2.png) |
 | *"Show me women blue jeans"* | ![Search Result 3](images/search_result_3.png) |
+| *"Show me Kurta-Sets for my wife"* | ![Search Result 4](images/search_result_4.jpg) |
+| *"Show me tops to gift in birthday for my sister"* | ![Search Result 5](images/search_result_5.jpg) |
 
 ---
 
