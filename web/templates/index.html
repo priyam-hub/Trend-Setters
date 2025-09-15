@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Search for Fashion Products</h1>
+        <div id="chatWindow">
+            <div id="userMessageContainer">
+                <div id="userMessage" class="chat-message user-message"></div>
+            </div>
+            <div id="responseContainer">
+                <div id="responseMessage" class="chat-message response-message"></div>
+                <div id="results" class="response-results"></div>
+            </div>
+        </div>
+        <form id="searchForm">
+            <input type="text" id="query" placeholder="Enter your search query" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <script src="static/js/chatBot.js"></script>
+</body>
+
+</html>
