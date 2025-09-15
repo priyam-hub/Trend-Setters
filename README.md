@@ -136,6 +136,36 @@ It is used to power semantic search and AI-driven product recommendations in thi
 
 ---
 
+# ⚡ Performance & Inference Time of the Model
+
+We benchmarked **meta-llama/Llama-3.1-8B** across different hardware accelerators and configurations (4-bit & 8-bit).  
+The chart below shows the **predicted inference time (in seconds)** for different setups:
+
+<p align="center">
+  <img src="images/performance_inference_time.png" alt="Performance and Inference Time" width="700">
+</p>
+
+### 📊 Summary Table  
+
+| Model                       | Hardware                  | Config | Predicted Time (s) |
+| --------------------------- | ------------------------- | ------ | ------------------ |
+| **meta-llama/Llama-3.1-8B** | **CPU**                   | 4-bit  | \~60               |
+|                             |                           | 8-bit  | \~110              |
+| **meta-llama/Llama-3.1-8B** | **T4 GPU**                | 4-bit  | 10                 |
+|                             |                           | 8-bit  | 17                 |
+| **meta-llama/Llama-3.1-8B** | **A100 GPU**              | 4-bit  | \~3–4              |
+|                             |                           | 8-bit  | \~6–7              |
+| **meta-llama/Llama-3.1-8B** | **L4 GPU**                | 4-bit  | \~5                |
+|                             |                           | 8-bit  | \~9                |
+| **meta-llama/Llama-3.1-8B** | **v5e-1 TPU**             | 4-bit  | \~8                |
+|                             |                           | 8-bit  | \~13               |
+| **meta-llama/Llama-3.1-8B** | **v2-8 TPU (Deprecated)** | 4-bit  | \~15               |
+|                             |                           | 8-bit  | \~25               |
+| **meta-llama/Llama-3.1-8B** | **v6e-1 TPU**             | 4-bit  | \~6                |
+|                             |                           | 8-bit  | \~11               |
+
+---
+
 # 📂 Project Structure
 
 ```plaintext
@@ -200,37 +230,6 @@ Trend-Setters/
     ├── __init__.py                          # Marks web folder as a Python package
     └── app.py                               # Flask application file to run backend and route endpoints
 ```
-
----
-
-## ⚡ Performance & Inference Time
-
-We benchmarked **meta-llama/Llama-3.1-8B** across different hardware accelerators and configurations (4-bit & 8-bit).  
-The chart below shows the **predicted inference time (in seconds)** for different setups:
-
-<p align="center">
-  <img src="images/performance_inference_time.png" alt="Performance and Inference Time" width="700">
-</p>
-
-### 📊 Summary Table  
-
-| Model                       | Hardware                  | Config | Predicted Time (s) |
-| --------------------------- | ------------------------- | ------ | ------------------ |
-| **meta-llama/Llama-3.1-8B** | **CPU**                   | 4-bit  | \~60               |
-|                             |                           | 8-bit  | \~110              |
-| **meta-llama/Llama-3.1-8B** | **T4 GPU**                | 4-bit  | 10                 |
-|                             |                           | 8-bit  | 17                 |
-| **meta-llama/Llama-3.1-8B** | **A100 GPU**              | 4-bit  | \~3–4              |
-|                             |                           | 8-bit  | \~6–7              |
-| **meta-llama/Llama-3.1-8B** | **L4 GPU**                | 4-bit  | \~5                |
-|                             |                           | 8-bit  | \~9                |
-| **meta-llama/Llama-3.1-8B** | **v5e-1 TPU**             | 4-bit  | \~8                |
-|                             |                           | 8-bit  | \~13               |
-| **meta-llama/Llama-3.1-8B** | **v2-8 TPU (Deprecated)** | 4-bit  | \~15               |
-|                             |                           | 8-bit  | \~25               |
-| **meta-llama/Llama-3.1-8B** | **v6e-1 TPU**             | 4-bit  | \~6                |
-|                             |                           | 8-bit  | \~11               |
-
 
 ---
 
