@@ -200,37 +200,69 @@ Trend-Setters/
     ├── __init__.py                          # Marks web folder as a Python package
     └── app.py                               # Flask application file to run backend and route endpoints
 ```
+
 ---
 
-# 📜 License
+## ⚡ Performance & Inference Time
 
-This project is licensed under the [MIT License](./LICENSE).
+We benchmarked **meta-llama/Llama-3.1-8B** across different hardware accelerators and configurations (4-bit & 8-bit).  
+The chart below shows the **predicted inference time (in seconds)** for different setups:
+
+<p align="center">
+  <img src="images/performance_inference_time.png" alt="Performance and Inference Time" width="700">
+</p>
+
+### 📊 Summary Table  
+
+| Model                       | Hardware                  | Config | Predicted Time (s) |
+| --------------------------- | ------------------------- | ------ | ------------------ |
+| **meta-llama/Llama-3.1-8B** | **CPU**                   | 4-bit  | \~60               |
+|                             |                           | 8-bit  | \~110              |
+| **meta-llama/Llama-3.1-8B** | **T4 GPU**                | 4-bit  | 10                 |
+|                             |                           | 8-bit  | 17                 |
+| **meta-llama/Llama-3.1-8B** | **A100 GPU**              | 4-bit  | \~3–4              |
+|                             |                           | 8-bit  | \~6–7              |
+| **meta-llama/Llama-3.1-8B** | **L4 GPU**                | 4-bit  | \~5                |
+|                             |                           | 8-bit  | \~9                |
+| **meta-llama/Llama-3.1-8B** | **v5e-1 TPU**             | 4-bit  | \~8                |
+|                             |                           | 8-bit  | \~13               |
+| **meta-llama/Llama-3.1-8B** | **v2-8 TPU (Deprecated)** | 4-bit  | \~15               |
+|                             |                           | 8-bit  | \~25               |
+| **meta-llama/Llama-3.1-8B** | **v6e-1 TPU**             | 4-bit  | \~6                |
+|                             |                           | 8-bit  | \~11               |
+
 
 ---
 
 # 🔮 Future Enhancements
 
 ### 🚀 Phase 1 – Core Improvements
-- **User Authentication**: Enable login/logout with saved chat history.  
-- **Better Query Understanding**: Improve NLP pipeline for more accurate attribute extraction.  
-- **UI/UX Enhancements**: Add responsive chatbot widget with modern design.  
-- **Randomized Recommendations**: Smarter fallback mechanism with trending products instead of purely random ones.  
+
+* **User Authentication**: Enable login/logout with saved chat history.  
+* **Better Query Understanding**: Improve NLP pipeline for more accurate attribute extraction.  
+* **UI/UX Enhancements**: Add responsive chatbot widget with modern design.  
+* **Randomized Recommendations**: Smarter fallback mechanism with trending products instead of purely random ones.  
 
 ### 🌍 Phase 2 – Advanced Features
-- **Multi-Language Support**: Let users interact in multiple languages.  
-- **Voice Search**: Integrate speech-to-text for hands-free chatbot queries.  
-- **Recommendation Engine**: Personalized product suggestions using collaborative filtering.  
-- **Image-Based Search**: Upload product images to get visually similar results.  
+
+* **Multi-Language Support**: Let users interact in multiple languages.  
+* **Voice Search**: Integrate speech-to-text for hands-free chatbot queries.  
+* **Recommendation Engine**: Personalized product suggestions using collaborative filtering.  
+* **Image-Based Search**: Upload product images to get visually similar results.  
 
 ### ☁️ Phase 3 – Enterprise & Scalability
-- **Real-Time Inventory Sync**: Connect with live e-commerce databases to track stock availability.  
-- **Payment Integration**: Allow direct checkout and transactions within chatbot.  
-- **Analytics Dashboard**: Provide admins with insights on queries, popular searches, and conversion rates.  
-- **Cloud Deployment & Scaling**: Deploy with Docker/Kubernetes on AWS/GCP/Azure for high availability.  
-- **Security Enhancements**: Implement JWT authentication, role-based access, and encrypted APIs.  
 
+* **Real-Time Inventory Sync**: Connect with live e-commerce databases to track stock availability.  
+* **Payment Integration**: Allow direct checkout and transactions within chatbot.  
+* **Analytics Dashboard**: Provide admins with insights on queries, popular searches, and conversion rates.  
+* **Cloud Deployment & Scaling**: Deploy with Docker/Kubernetes on AWS/GCP/Azure for high availability.  
+* **Security Enhancements**: Implement JWT authentication, role-based access, and encrypted APIs.  
 
 ---
+
+# 📜 License
+
+This project is licensed under the [MIT License](./LICENSE).
 
 <div align="center">
 
