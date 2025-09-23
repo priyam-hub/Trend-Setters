@@ -20,10 +20,10 @@
 
 ## 📝 Project Overview
 
-This project is an **AI-powered conversational chatbot** built for **e-commerce platforms**.  
-It enables users to discover and explore fashion products through natural conversations instead of traditional keyword searches.  
-By combining **Natural Language Processing (NLP)** with **Vector Search (Qdrant)**, the chatbot delivers highly relevant and personalized product recommendations.  
-The system is designed with a **Flask backend**, an **interactive frontend UI**, and integrates **state-of-the-art LLaMA models** (via Groq API and Hugging Face) for intelligent query understanding and recommendation.  
+* This project is an **AI-powered conversational chatbot** built for **e-commerce platforms**.  
+* It enables users to discover and explore fashion products through natural conversations instead of traditional keyword searches.  
+* By combining **Natural Language Processing (NLP)** with **Vector Search (Qdrant)**, the chatbot delivers highly relevant and personalized product recommendations.  
+* The system is designed with a **Flask backend**, an **interactive frontend UI**, and integrates **state-of-the-art LLaMA models** (via Groq API and Hugging Face) for intelligent query understanding and recommendation.  
 
 ---
 
@@ -48,6 +48,8 @@ The system is designed with a **Flask backend**, an **interactive frontend UI**,
 * **Hugging Face LLM Model**: [Hugging Face](https://huggingface.co/meta-llama) **Llama-3.1-8B** (powered by META)  
 * **Fine-Tuning**: [4-bit Quantization](https://huggingface.co/docs/transformers/main_classes/quantization) for CUDA/Linux & [LoRA](https://huggingface.co/docs/peft/main/en/conceptual_guides/lora) (8-bit) for Windows  
 * **Deployment**: *TBD*
+
+**Note** : Due to Limited Resource, We have used ChatGroq due to resource constraint. If proper GPU support is available we can use the Quantized FT version of the HF-LLM
 
 ---
 
